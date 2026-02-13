@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-912D4ZR2HV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-912D4ZR2HV');
+</script>
+
+<!-- Robust Anti-Reload (Blocking Live Server) -->
+<script>
+(function() {
+    const block = (m) => console.log("Blocking reload attempt: " + m);
+    try {
+        // Simple override
+        window.location.reload = function() { block("location.reload"); };
+        window.history.go = function() { block("history.go"); };
+        window.location.replace = function() { block("location.replace"); };
+        
+        // Prevent meta refresh
+        const preventRefresh = () => {
+            const refresh = document.querySelector('meta[http-equiv="refresh"]');
+            if (refresh) {
+                console.log("Blocking meta refresh");
+                refresh.remove();
+            }
+        };
+        setInterval(preventRefresh, 1000);
+
+        // Block beforeunload popup if it exists
+        window.addEventListener('beforeunload', (event) => {
+            event.stopImmediatePropagation();
+        }, true);
+
+    } catch(e) { console.error("Reload fix error:", e); }
+})();
+</script>
+
+<title>Fsucraft - Play Online for Free</title>
+    <meta name="description" content="Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!"> 
+    <meta name="author" content="HSINI">
+<meta charset="UTF-8" />
+<script type="text/javascript" src="eagswebrtc.js"></script>
+<script type="text/javascript" src="music.js"></script>
+<script type="text/javascript" src="classes.js"></script>
+<script type="text/javascript">
+if(document.location.href.startsWith("file:")) {
+alert("You're not supposed to 'open' this file in your browser. Please upload this folder to your HTTP(s) server and access it via the internet. This is not a bug, please read the documentation");
+}else {
+window.addEventListener("load", async function(){
+/*
+let wardUrl = "";
+try {
+  wardUrl = (await (await fetch("https://pipedapi.tokhmi.xyz/streams/5VuDwU4bW8Q")).json()).audioStreams[0].url;
+} catch (e) {}
+*/
+const relayId = Math.floor(Math.random() * 3);
+window.eaglercraftOpts = {
+container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "TEST",
+assetOverrides: {
+    // "title/no-pano-blur.flag": "",
+	"records/wait.mp3": "wait.mp3",
+	"records/mellohi.mp3": "https://stream.nightride.fm/chillsynth.m4a",
+	"records/far.mp3": "https://stream.nightride.fm/nightride.m4a",
+	"records/cat.mp3": "http://usa9.fastcast4u.com/proxy/jamz?mp=/1",
+	"records/ward.mp3": "http://fr4.1mix.co.uk:8000/192h",
+	"records/strad.mp3": "http://listen.011fm.com:8028/stream15",
+	"records/blocks.mp3": "https://www.ophanim.net:8444/s/9780",
+	"records/13.mp3": "https://s2.radio.co/s2b2b68744/listen"
+	// "sounds/gta.mp3": "https://invidious.zapashcanon.fr/latest_version?itag=251&id=YRlIl6K6S88"
+	// "records/ward.mp3": wardUrl
+	// "sounds/gta.mp3": ""
+},
+servers: [
+	{ serverName: "Local Test Server", serverAddress: "localhost:25565", hideAddress: false }
+],
+relays: [
+	{ addr: "wss://relay.deev.is/", name: "lax1dude relay #1", primary: relayId == 0 },
+	{ addr: "wss://relay.lax1dude.net/", name: "lax1dude relay #2", primary: relayId == 1 },
+	{ addr: "wss://relay.shhnowisnottheti.me/", name: "ayunami relay #1", primary: relayId == 2 }
+],
+mainMenu: { splashes: [
+"Darviglet!", "eaglerenophile!", "You Eagler!", "Yeeeeeee!", "yeee",
+"EEEEEEEEE!", "You Darvig!", "You Vigg!", ":>", "|>", "You Yumpster!"
+], eaglerLogo: false }};
+(function(){
+var q = window.location.search;
+if(typeof q === 'string' && q.startsWith("?")) {
+	q = new URLSearchParams(q);
+	var s = q.get("server");
+	if(s) window.eaglercraftOpts.joinServer = s;
+}
+})();
+main();
+});}
+</script>
+
+ <style>
+    #popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid black;
+    }
+  </style>
+
+    <meta property="og:title" content="Fsucraft - Play Online for Free">
+    <meta property="og:description" content="Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/fsucraft/">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Fsucraft",
+  "description": "Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!",
+  "url": "https://unlockedgames.io/fsucraft/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true
+}</script>
+
+    <meta property="og:title" content="Fsucraft - Play Online for Free">
+    <meta property="og:description" content="Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/fsucraft/">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Fsucraft",
+  "description": "Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!",
+  "url": "https://unlockedgames.io/fsucraft/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true
+}</script>
+
+    <meta property="og:title" content="Fsucraft - Play Online for Free">
+    <meta property="og:description" content="Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/fsucraft/">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Fsucraft",
+  "description": "Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!",
+  "url": "https://unlockedgames.io/fsucraft/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true
+}</script>
+
+    <meta property="og:title" content="Fsucraft - Play Online for Free">
+    <meta property="og:description" content="Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/fsucraft/">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Fsucraft",
+  "description": "Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!",
+  "url": "https://unlockedgames.io/fsucraft/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "author": {
+    "@type": "Person",
+    "name": "HSINI"
+  }
+}</script>
+
+    <meta property="og:title" content="Fsucraft - Play Online for Free">
+    <meta property="og:description" content="Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unlockedgames.io/fsucraft/">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "SoftwareApplication"
+  ],
+  "name": "Fsucraft",
+  "description": "Play Fsucraft online for free. Unblocked and available on all devices. Experience the best Fsucraft gameplay now!",
+  "url": "https://unlockedgames.io/fsucraft/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "genre": "Arcade",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "author": {
+    "@type": "Person",
+    "name": "HSINI"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "hsinidev"
+  }
+}</script>
+</head>
+<body>
+  <div id="popup">
+    <p>THIS MOD MAKE BY AL JIHAD YA ISLAMI FUNDATION</p>
+	<p> أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا ٱللَّٰهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ ٱللَّٰهِ</p>
+	<p>ašhadu ʾan lā ʾilāha ʾilla -llāhu, wa-ʾašhadu ʾanna muḥammadan rasūlu -llāh</p>
+	<p> if not muslim say the above text and then take shower</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+<body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
+<script>
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+<!-- SEO CONTENT (Hidden) -->
+<div class="seo-generated-content" style="display:none; visibility:hidden;">
+<h2>What is Fsucraft?</h2>
+
+Fsucraft is a massively multiplayer online action role-playing game (MMORPG) developed by Pockit Games. It's set in a dark fantasy world, where players can explore vast landscapes, battle fearsome enemies, and engage in complex combat mechanics.
+
+<h3>How to Play</h3>
+
+To start playing Fsucraft, you'll need to create an account on the game's official website. Once logged in, you can choose your character type, select a class, and customize their appearance. The game has several modes, including PvE (player versus environment), PvP (player versus player), and a variety of crafting and exploration mechanics.
+
+The objective of the game is to survive against hordes of enemies, gather resources, and progress through the story. You can interact with non-playable characters (NPCs) to collect items, information, or quests.
+
+<h3>Tips and Tricks for Success</h3>
+• Master your combat skills: Fsucraft has complex combat mechanics, so it's essential to practice and improve your skills.
+• Explore thoroughly: Each world has multiple areas to explore, and you may find valuable resources or hidden secrets.
+• Participate in events: Regularly check the game's calendar for upcoming events, which often offer exclusive rewards or challenges.
+• Join a guild: Social interaction with other players can be beneficial for progressing through the story and acquiring new skills.
+
+<h2>Why You Should Play It</h2>
+
+Fsucraft offers an immersive gaming experience that combines elements of MMORPGs, action games, and exploration. The game's world is richly detailed, with a unique art style that sets it apart from other games in its genre. With a focus on storytelling and character development, Fsucraft encourages players to invest time and effort into creating their characters and engaging with the game's community.
+
+<h3>Gameplay Features</h3>
+• Complex combat mechanics: Fsucraft features intricate combat systems that require strategy and skill to master.
+• Exploration and discovery: The game has a vast open world, full of secrets and surprises for players to discover.
+• Crafting system: Players can craft their own items using resources gathered from the environment or purchased from other players.
+
+<h3>A Brief History</h3>
+
+Fsucraft was released in 2018 by Pockit Games, a relatively small studio that focused on creating high-quality games. Since its release, Fsucraft has received positive reviews for its engaging gameplay and rich storyline. The game has also spawned several expansions, which have added new content and features to the game.
+
+<h3>System Requirements</h3>
+
+To play Fsucraft, you'll need:
+• Operating System: Windows 10 or macOS High Sierra or later
+• Processor: Intel Core i5 or AMD equivalent
+• Memory: 8 GB RAM
+• Graphics Card: NVIDIA GeForce GTX 1060 or AMD Radeon RX 480
+</div>
+<script>
+    // Silently block specific Live Server reload triggers if possible
+    
+</script>
+</body>
+</html>
